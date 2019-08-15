@@ -58,6 +58,7 @@ ENDIF ()
 LibImport("tolua" "src/tolua")
 ExeImport("tools" "tolua;lua53")
 
+set_property(TARGET toluapp PROPERTY OUTPUT_NAME tolua++)
 #ADD_CUSTOM_COMMAND(
 #TARGET toluapptest
 #PRE_BUILD
