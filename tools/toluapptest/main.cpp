@@ -114,7 +114,7 @@ TEST(luabasetest, luabasetest) {
     std::vector<std::string> vecData;
     vecData.push_back("hello");
     oDMLuaEngine.Call("script.common.test.main", &vecData);
-    oDMLuaEngine.Call("script.config.loadcsv.main");
+
     CRoleMgr::Instance()->ReleaseRole(poRole);
 }
 //
