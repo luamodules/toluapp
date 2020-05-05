@@ -26,7 +26,6 @@ EXPORTS
     tolua_beginmodule
     tolua_endmodule
     tolua_module
-    tolua_class
     tolua_cclass
     tolua_function
     tolua_constant
@@ -52,14 +51,14 @@ EXPORTS
     tolua_tostring
     tolua_tolstring
     tolua_tofieldlstring
-    olua_touserdata
-    olua_tousertype
+    tolua_touserdata
+    tolua_tousertype
     tolua_tovalue
     tolua_toboolean
     tolua_tofieldnumber
     tolua_tofieldstring
-    olua_tofielduserdata
-    olua_tofieldusertype
+    tolua_tofielduserdata
+    tolua_tofieldusertype
     tolua_tofieldvalue
     tolua_getfieldboolean
     tolua_dobuffer
