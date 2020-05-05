@@ -1,0 +1,6 @@
+EXPORTS 
+    tolua_open
+    tolua_beginmodule
+    tolua_endmodule
+    tolua_module
+    tolua_dobuffer
