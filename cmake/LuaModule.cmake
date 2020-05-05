@@ -103,6 +103,8 @@ macro(LuaModuleImport LuaVersion ModuleName ModulePath ExePath)
             ${CMAKE_CURRENT_SOURCE_DIR}/${ExePath}/${subdir}/*.c
             ${CMAKE_CURRENT_SOURCE_DIR}/${ExePath}/${subdir}/*.hpp
             ${CMAKE_CURRENT_SOURCE_DIR}/${ExePath}/${subdir}/*.h)
+            
+            INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/${ExePath}/${subdir})
 
             ADD_EXECUTABLE(${subdir} ${DMMODULE_EXE_SOURCES})
             TARGET_LINK_LIBRARIES(${subdir} ${ModuleName})
@@ -127,6 +129,8 @@ macro(LuaModuleImport LuaVersion ModuleName ModulePath ExePath)
             ${CMAKE_CURRENT_SOURCE_DIR}/${ExePath}/${subdir}/*.hpp
             ${CMAKE_CURRENT_SOURCE_DIR}/${ExePath}/${subdir}/*.h)
 
+            INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/${ExePath}/${subdir})
+
             ADD_EXECUTABLE(${subdir} ${DMMODULE_EXE_SOURCES})
             TARGET_LINK_LIBRARIES(${subdir} ${ModuleName})
         ENDFOREACH()
@@ -146,6 +150,8 @@ macro(LuaModuleImport LuaVersion ModuleName ModulePath ExePath)
             ${CMAKE_CURRENT_SOURCE_DIR}/${ExePath}/${subdir}/*.c
             ${CMAKE_CURRENT_SOURCE_DIR}/${ExePath}/${subdir}/*.hpp
             ${CMAKE_CURRENT_SOURCE_DIR}/${ExePath}/${subdir}/*.h)
+            
+            INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/${ExePath}/${subdir})
 
             ADD_EXECUTABLE(${subdir} ${DMMODULE_EXE_SOURCES})
             TARGET_LINK_LIBRARIES(${subdir} ${ModuleName})
