@@ -1,6 +1,6 @@
 
 rem - clone code
-rem git clone https://github.com/brinkqiang/toluapp.git
+rem git clone https://github.com/luamodules/toluapp.git
 rem pushd toluapp
 rem git submodule update --init --recursive
 

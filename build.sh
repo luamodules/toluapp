@@ -6,7 +6,7 @@
 #
 
 # - clone code
-# git clone https://github.com/brinkqiang/toluapp.git
+# git clone https://github.com/luamodules/toluapp.git
 # pushd toluapp
 # git submodule update --init --recursive
 #
